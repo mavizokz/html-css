@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+        
+        #especial::after {
+            content: none;
+            
+        }
+        
+        #especial::before {
+            content: '☛ ';
+
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    
+        a::after{
+            text-decoration: none;
+            font-weight: lighter;
+            content: ' [link]';
+            color: rgb(139, 180, 142);
+        }
+    
+       a:active {
+        color: limegreen;
+       }
+    </style>
+
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank">Repositorio GitGub</a></li>
+        <li><a href="https://www.youtube.com/@mavizokz/videos" target="_blank">Canal do Youyube</a></li>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements" target="_blank">Pseudo-elementos</a></li>
+        <li><a href="https://www.youtube.com/watch?v=wht3KWkM1cs&list=RDYfHPNjcKE8s&index=7&ab_channel=DJDudah" target="_blank" id="especial">Classe especial ☚</a></li>
+    </ul>
+    
+</body>
+</html>

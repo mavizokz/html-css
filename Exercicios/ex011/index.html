@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <style>
+        body{
+            background-color: rgb(219, 180, 180);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p> Tente abrir esse navegador em difierentes dispositivos, ou simplesmente diminua e aumente o tamanho do navegador </p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagem/rua-p.jpg" type="image/jpg">
+        <source media="(max-width:1050px)" srcset="imagem/rua-m.jpg" type="image/jpg">
+        <img src="imagem/rua-g.jpg" alt="Imagem flexível">
+    </picture>
+
+    <h1>Audio</h1>
+    <p>O audio em HTML5 é muito simples de colocar, vai depender mesmo do seu navegador (que tipo de formato ele vai aguentar OBS:evitar o WAV, ele é muito pesado).</p>
+    
+    <audio preload="metadata" controls>
+        <source src="audio/Till I'm on Top - NEFFEX.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador é um lixo,<a href="audio/Till I'm on Top - NEFFEX.mp3" target="_blank" download="Till I'm on Top - NEFFEX.mp3" type="audio/mpeg">clique aqui</a> para baixar a música, lixão</p>
+    </audio>
+
+    <h1>Vídeos</h1>
+    <p>Para não pagar uma fortuna com a hospedagem, é legal usarmos youtube, vimeo, twitch e etec... para colocar os videos no nosso site. E só apertar em compartilhar e depois em incorporar EZY assim!</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dw38QHPhoSQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+</body>
+</html>

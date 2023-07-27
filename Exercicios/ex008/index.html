@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação de Textos</title>
+    <style>
+        body {
+            background-color: #8585c5 ;
+        }
+        mark {
+            background-color: rgb(75, 117, 112);
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nessa frase estarei usando o metodo do <b>HTML4</b> (Não Semântica) </p>
+    <p>Ja nesta farse estarei usando o método de <strong>HTML5</strong> (Semântica)</p>
+    <h2>Itálico/Enfase</h2>
+    <p>Aqui estarei usando o método do em <i>HMTL4</i> (Não Semântica)</p>
+    <p>Já aqui estarei usando o método de <em>HTML5</em> (Semântica)</p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar um <mark>texto marcado usando</mark> a tag &lt;mark&gt; </p>
+    <p>O de cima foi a <ins>cor</ins> foi configurado no cabessalho, já esse vai configurado <mark style="background-color: lime;">dentro da tag</mark> &lt;mark&gt;</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um texto como <del>excluido</del> para indicar que ele deve ser lido, mas não considerado, com a tag &lt;del&gt;</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um texto inserido para dar uma enfase e indicar que ele foi <ins>add depois</ins>, com a tag &lt;ins&gt;</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Encima x<sup>20</sup>+3, com &lt;sup&gt;</p>
+    <h2>Texto subscrito</h2>
+    <p>Embaixo H<sub>2</sub>O, com &lt;sub&gt;</p>
+    <h2>Abreviações com especificação</h2>
+    <p>Se passar com o mouse encima do 
+    <abbr title="Linguagem de Marcação de HiperTexto">HTML</abbr> vai ter uma especificação do que é isso (é bom para o algoritmo do google)</p>
+    <h2>Trechos de códigos</h2>
+    <p>Python</p>
+    <p>Esse está <mark>SEM</mark> o ''pre'' antes, apenas com do 'code':
+        <code>
+            import time
+            print('\033[35m -=- \033[m'*20)
+            print(' Analisador de Triângulos')
+            print('\033[35m -=- \033[m'*20)
+            
+            a = float(input('Priemiro segmento: '))
+            b = float(input('Segundo segmento: '))
+            c = float(input('Terceiro segmento: '))
+            print('\033[32mPROCESSANDO...\033[m')
+            time.sleep(2)
+            if a + b > c and a + c > b and c + b > a:
+                print('\033[34mDá\033[m para formar um triângulo!!')
+            else:
+                print('\033[31mNão\033[m da para formar um triângulo!!')
+        </code></p>
+    <p>Esse está <mark>COM</mark> o ''pre''' antes e depois vem o 'code'
+        <pre>
+            <code>
+                import time
+                print('\033[35m -=- \033[m'*20)
+                print(' Analisador de Triângulos')
+                print('\033[35m -=- \033[m'*20)
+                
+                a = float(input('Priemiro segmento: '))
+                b = float(input('Segundo segmento: '))
+                c = float(input('Terceiro segmento: '))
+                print('\033[32mPROCESSANDO...\033[m')
+                time.sleep(2)
+                if a + b > c and a + c > b and c + b > a:
+                    print('\033[34mDá\033[m para formar um triângulo!!')
+                else:
+                    print('\033[31mNão\033[m da para formar um triângulo!!')
+            </code>
+        </pre></p>        
+</body>
+</html>

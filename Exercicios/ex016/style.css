@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    background-color:rgb(235, 156, 128);
+}
+
+main {
+    background-color: white;
+    border-radius: 20px;/*edixa as bordas mais arrrendodadas*/
+    box-shadow: 5px 3px 15px rgba(143, 93, 76, 0.712) ;/*o primeiro parametro é quanto sombra vai andar para o lado, o segundo quanto vai andar para baixo, o fade e o ultimo é a cor*/ 
+    width: 800px;/*largura*/
+    height: 800px;/*altura*/
+    padding: 10px;/*o espaço ao redor do conteúdo (ex.: ao redor do texto de um parágrafo).*/
+    /* border:xxxx; a linha sólida do lado de fora do padding*/
+    margin: auto;/*o espaço externo a um elemento.*/
+}
+h1 {
+    color: rgb(3, 37, 108) ;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(1, 14, 43, 0.671) ;
+}
+
+h2 {
+    color: rgb(37, 65, 178);
+}
+
+p {
+   text-align: justify;
+}

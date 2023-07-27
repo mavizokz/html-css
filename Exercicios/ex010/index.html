@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+<style>
+    body {
+        background-color: darkolivegreen;
+    }
+</style>
+</head>
+<body>
+    <h1>Links</h1>
+    <hr>
+    <h2>Controlando onde o site vai abrir com &lt;target&gt;
+
+    </h2>
+    <p>Voce pode acessar o meu <a href="https://www.youtube.com/@mavizokz/videos">canal no youtube</a>, esse é o modo padrão, que abre a pagina encima da atual</p>
+    <p>Voce pode acessar o meu <a href="https://www.youtube.com/@mavizokz/videos" target="_blank">canal no youtube</a>, já esse aqui vai abrir uma pagina nova.</p>
+    
+    <h2>Indicar a natureza do link com &lt;rel&gt;</h2>
+    <p>Para fazer com que a pessoa acesse a <a href="./pag002.html" rel="next">segunda pagina</a>, que está dentro desta pasta atual podemos usar o rel=next, sem precisar colocar uma URL inteira</p>
+    <p>Mas tbm podemos usar o rel para indicar <a href="https://www.youtube.com/watch?v=gZWLcVRgx6M&list=RDMMgZWLcVRgx6M&start_radio=1&ab_channel=LatinHype" rel="external">links externos</a> com rel=external (é sempre bom colocaros rel, o algoritmo do google estara do seu lado desse jeito) esse aqui precisa da URL inteira, pq está fora da pasta</p>
+
+    <h2>Downloads</h2>
+    <p>Para os Downloads tbm usamos as ancoras, <a href="livro/meulivro.pdf" download="meulivro.pdf" type="aplication/pdf">para nos levar aos arquivos</a>(aqui está em PDF)</p>
+    <p>Aqui vou usar o <a href="livro/meulivro.zip" download="meulivro.zip" type="meulivro/zip">zip</a>, serve para compactar o arquivo</p>
+
+
+</body>
+</html>
